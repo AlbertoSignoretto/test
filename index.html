@@ -1,5 +1,17 @@
 <html>
 <body>
-<p>Ciao</p>
+<p id="saluto">Buongiorno</p>
+<button id="cambiaSaluto">Cambia Saluto</button>
+
+<script>
+document.getElementById("cambiaSaluto").onclick = function() {
+    var p = document.getElementById("saluto");
+    if (p.innerText === "Buongiorno") {
+        p.innerText = "Buonanotte";
+    } else {
+        p.innerText = "Buongiorno";
+    }
+};
+</script>
 </body>
 </html>
